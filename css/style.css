@@ -1,9 +1,37 @@
 /* #region Base*/
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 /* #endregion */
 
 /* #region Ingredients */
+.ingredients-heading {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.ingredients-heading > span {
+  color: #fd9222;
+}
+
+.ingredients-item-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.item-focus-orange {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+.item-focus-blue {
+  background-color: #1e1823;
+}
 /* #endregion */
