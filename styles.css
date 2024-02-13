@@ -1,0 +1,41 @@
+
+
+
+
+
+
+/* Section 5 */
+.title-section {
+    font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.16667;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #111;
+}
+.title-made {
+    color: #fd9222;
+}
+
+.main-title {
+    font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33333;
+        color: #111;
+}
+.made-list-item {
+    font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28571;
+        letter-spacing: -0.02em;
+        color: #111;
+}
+.choco-made {
+    border-radius: 15px;
+        width: 600px;
+        height: 400px;
+}
