@@ -8,12 +8,12 @@ a, address {
 
 body {
 font-family: "Montserrat";
-color:white;
 font-weight: 500;
 }
 
 footer {
     background-color: #1E1823;
+    color: white;
 }
 
 .footer ul,ol {
