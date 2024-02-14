@@ -1,0 +1,47 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+ul, :ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1168px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 24px 0;
+}
+.header-cont {
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    justify-content:space-between;
+}
+.nav-list {
+    gap: 24px;
+    display: flex;
+}
