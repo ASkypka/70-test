@@ -8,12 +8,12 @@ a, address {
 
 body {
 font-family: "Montserrat";
-color:white;
 font-weight: 500;
 }
 
 footer {
     background-color: #1E1823;
+    color: white;
 }
 
 .footer ul,ol {
@@ -49,7 +49,7 @@ p {
 
 
 
-.conteiner {
+.container {
     width: 1168px;
     padding: 0 16px;
     margin: 0 auto;
@@ -59,6 +59,7 @@ p {
     display: flex;
     padding: 50px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
 }
 
 .container-footer-nav {
@@ -84,6 +85,9 @@ color: #FD9222;
 
 .footer-text {
 margin-bottom: 14px;
+font-weight: 500;
+font-size: 14px;
+line-height: 129%;
 }
 
 .footer-social-list {
@@ -96,6 +100,11 @@ margin-bottom: 14px;
 }
 
 .footer-social-link {
+    font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+text-align: center;
 
 }
 
@@ -132,7 +141,10 @@ gap: 24px;
 }
 
 .footer-nav-link {
-
+font-weight: 500;
+font-size: 14px;
+line-height: 114%;
+letter-spacing: -0.02em;
 }
 
 header {
