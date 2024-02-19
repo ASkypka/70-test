@@ -194,7 +194,6 @@ header {
 
 /* #region benefits */
 
-/* benefits */
 .benefits {
   background-color: #1e1823;
   padding: 50px 0;
@@ -336,7 +335,6 @@ header {
   margin-right: 50px;
 }
 
-/* #region Footer */
 .sellers {
   padding: 60px 0;
 }
@@ -407,6 +405,8 @@ header {
 .seller-item:hover .overlay-sellers-text {
   transform: translateY(0%);
 }
+
+/* #region Footer */
 
 footer {
   background-color: #1e1823;
