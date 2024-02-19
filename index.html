@@ -63,19 +63,33 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>
-          Treat yourself or a loved one to our finest ingredients for a moment
-          of pure delight!
-        </h1>
-        <ul>
-          <li><button>Buy now</button></li>
-          <li><button>How it’s made</button></li>
-        </ul>
-        <a href="">
-          scroll down
-          <img src="./images/2.svg" />
-        </a>
+      <section class="section-hero">
+        <div class="container container-hero">
+          <h1 class="hero-title">
+            Treat yourself or a loved one to our&nbspfinest ingredients for a
+            moment of pure delight!
+          </h1>
+          <div class="hero-wrapper">
+            <ul class="hero-list">
+              <li class="hero-item">
+                <button class="hero-button buy">Buy now</button>
+              </li>
+              <li class="hero-item">
+                <button class="hero-button made">How it’s made</button>
+              </li>
+            </ul>
+            <div class="scroll-wrapper">
+              <a class="scroll-link" href=""> scroll down </a>
+              <a class="scroll-link" href="">
+                <div class="hero-icon-container">
+                  <svg class="scroll-icon" width="22" height="22">
+                    <use href="./images/icons.svg#icon-small-left-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!--About us-->
@@ -84,6 +98,11 @@
           <h2 hidden>benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefits-icon-container">
+                <svg width="32" height="32" class="benefits-icon">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -93,6 +112,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-icon-container">
+                <svg width="32" height="32" class="benefits-icon">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -103,6 +127,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-icon-container">
+                <svg width="32" height="32" class="benefits-icon">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
@@ -371,48 +400,7 @@
           </li>
         </ul>
       </section>
-      <!-- Секція 5 -->
-      <section>
-        <h2>How it’s made?</h2>
-        <img
-          src="./images/choco.png"
-          alt="photochocolate"
-          width="600"
-          height="400"
-        />
-        <h3>
-          Try our chocolates today and discover the perfect balance of flavor
-        </h3>
-        <ul>
-          <li>
-            <p>
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </p>
-          </li>
-          <li>
-            <p>
-              At the same time, prepare a water bath. Melt the butter on it.
-            </p>
-          </li>
-          <li>
-            <p>
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </p>
-          </li>
-          <li>
-            <p>Heat the mixture over low heat, letting it barely boil.</p>
-          </li>
-          <li>
-            <p>
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </p>
-          </li>
-        </ul>
-      </section>
+
       <!-- Section top sellers -->
 
       <section class="sellers">
@@ -480,28 +468,29 @@
             <p class="footer-text">Social networks</p>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="footer-social-link" href=""
-                  ><img
-                    src="./images/footer-icons/icon-facebook.png"
-                    width="40"
-                    height="40"
-                /></a>
+                <a class="footer-social-link" href="">
+                  <div class="footer-icon-container">
+                    <svg width="24" height="24" class="footer-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </div>
+                </a>
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-link" href=""
-                  ><img
-                    src="./images/footer-icons/icon-instagram.png"
-                    width="40"
-                    height="40"
-                /></a>
+                  ><div class="footer-icon-container">
+                    <svg width="24" height="24" class="footer-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg></div
+                ></a>
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-link" href=""
-                  ><img
-                    src="./images/footer-icons/icon-twitter.png"
-                    width="40"
-                    height="40"
-                /></a>
+                  ><div class="footer-icon-container">
+                    <svg width="24" height="24" class="footer-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></div
+                ></a>
               </li>
             </ul>
           </div>

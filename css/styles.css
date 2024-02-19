@@ -30,6 +30,11 @@ ul {
   padding: 0;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 .container {
   width: 1168px;
   padding: 0 16px;
@@ -62,29 +67,6 @@ header {
   display: flex;
   gap: 24px;
   margin-left: 365px;
-}
-
-.nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: -0.02em;
-  color: #111;
-}
-
-.current {
-  position: relative;
-  color: #fd9222;
-}
-
-.current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: #fd9222;
-  position: absolute;
-  bottom: -32px;
-  left: 0;
 }
 
 .header-icon-list {
@@ -125,6 +107,93 @@ header {
   fill: #fd9222;
 } */
 
+/* #region Hero */
+
+.container-hero {
+  padding: 40px;
+  padding-top: 381px;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.1),
+      rgba(17, 17, 17, 0.1)
+    ),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  background-position: center;
+}
+
+.section-hero {
+  padding-bottom: 80px;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  width: 484px;
+  margin-bottom: 32px;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-list {
+  display: flex;
+  gap: 14px;
+}
+
+.hero-button {
+  border-radius: 100px;
+  padding: 14px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+.buy {
+  background-color: #fd9222;
+}
+.made {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.scroll-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.scroll-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.hero-icon-container {
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-icon {
+  fill: #fd9222;
+}
+
+/* #endregion Hero */
+
+/* #region benefits */
+
 /* benefits */
 .benefits {
   background-color: #1e1823;
@@ -146,6 +215,35 @@ header {
   width: calc((100% - 88px * 2) / 3);
 }
 
+.benefits-item:not(:last-child) {
+  position: relative;
+}
+
+.benefits-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 0px;
+  height: 124px;
+  right: calc(-1 * ((100% / 3.5) / 2));
+  top: calc((100% / 2) - 62px);
+}
+
+.benefits-icon-container {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.benefits-icon-container .benefits-icon {
+  fill: #fd9222;
+}
+
 .benefits-title {
   margin-bottom: 18px;
   font-weight: 600;
@@ -162,7 +260,7 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* benefits */
+/*#endregion benefits*/
 
 .product {
   padding: 60px 0;
@@ -234,11 +332,8 @@ header {
   background-color: #fafafa;
 }
 
-.button {
-}
-
 /* #region ingridients */
-.ingridients{
+.ingridients {
   padding: 60px 0;
 }
 .ingridients-list {
@@ -282,8 +377,8 @@ header {
   right: 14px;
   top: 14px;
 }
-.ingridients-item:nth-child(2n + 2) .ingridients-arrow-icon{
-  stroke:#fd9222;
+.ingridients-item:nth-child(2n + 2) .ingridients-arrow-icon {
+  stroke: #fd9222;
 }
 .ingridients-img-wrapp {
   height: 160px;
@@ -318,8 +413,6 @@ header {
 .sellers-list {
   display: flex;
   gap: 16px;
-
-
 }
 
 .seller-item {
@@ -374,9 +467,19 @@ header {
   transform: translateY(0%);
 }
 
+/* #region Footer */
+
 footer {
   background-color: #1e1823;
   color: white;
+}
+
+.container-footer {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 54px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1136px;
 }
 
 .footer-title {
@@ -397,6 +500,18 @@ footer {
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
+}
+
+.footer-icon-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-icon {
+  fill: #ffffff;
 }
 
 .footer-social-list {
@@ -420,8 +535,10 @@ footer {
   text-align: center;
 }
 
-.footer-nav {
+.container-footer-nav {
   display: flex;
+  padding-top: 42px;
+  padding-bottom: 68px;
 }
 
 .footer-nav-list {
@@ -435,3 +552,5 @@ footer {
   line-height: 114%;
   letter-spacing: -0.02em;
 }
+
+/* #endregion Footer */
