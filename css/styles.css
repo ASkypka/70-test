@@ -1,6 +1,6 @@
 body {
-  font-family: "Montserrat";
   font-weight: 500;
+  font-family: "Montserrat";
 }
 
 h1,
@@ -14,9 +14,9 @@ p {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 a {
@@ -25,15 +25,15 @@ a {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .container {
   width: 1168px;
-  padding: 0 16px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 header {
@@ -76,12 +76,12 @@ header {
 
 .header-icon-link {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 10px;
+  align-items: center;
   width: 100%;
   height: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
   color: #111111;
 }
 
@@ -103,15 +103,43 @@ header {
 } */
 
 /* benefits */
+
+.nav-link{
+  color: #111111;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1,14%;
+  letter-spacing: -0.02em;
+
+}
+.current{
+  color: #fd9222;
+  font-weight: 500;
+  
+
+}
+
+.current::after {
+  content: "";
+
+  top:0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  background-color: #fd9222;
+}
+
+
 .benefits {
-  background-color: #1e1823;
   padding: 50px 0;
+  background-color: #1e1823;
 }
 
 .benefits .container {
   width: 1200px;
-  padding-left: 50px;
   padding-right: 50px;
+  padding-left: 50px;
 }
 
 .benefits-list {
@@ -125,18 +153,18 @@ header {
 
 .benefits-title {
   margin-bottom: 18px;
+  color: #ffffff;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
-  color: #ffffff;
 }
 
 .benefits-text {
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 /* benefits */
@@ -151,13 +179,13 @@ header {
 
 .product-title {
   margin-bottom: 50px;
+  color: #111;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16667;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
   text-align: center;
-  color: #111;
+  text-transform: uppercase;
 }
 
 .product-list {
@@ -168,47 +196,47 @@ header {
 }
 
 .product-item {
-  padding: 32px 20px;
   width: calc((100% - 18px * 3) / 4);
+  padding: 32px 20px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 
 }
 
 .product-item-title {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  color: #111;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33333;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #111;
-  margin-bottom: 2px;
-  margin-top: 8px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .product-item-text {
+  margin-bottom: 18px;
+  color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: -0.02em;
-  color: rgba(17, 17, 17, 0.7);
-  margin-bottom: 18px;
   text-align: center;
 }
 
 .button-product {
+  display: block;
+  min-width: 94px;
+  height: 33px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  background-color: #fafafa;
+  color: #111;
 
   font-weight: 600;
   font-size: 14px;
-  color: #111;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 100px;
-  padding: 8px 20px;
-  min-width: 94px;
-  height: 33px;
-  display: block;
-  margin: 0 auto;
-  background-color: #fafafa;
 }
 
 .button {}
@@ -223,11 +251,11 @@ footer {
 }
 
 .footer-title {
+  width: 300px;
+  margin-right: auto;
   font-weight: 500;
   font-size: 28px;
   line-height: 121%;
-  width: 300px;
-  margin-right: auto;
   letter-spacing: -0.02em;
 }
 
