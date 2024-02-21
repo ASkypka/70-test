@@ -316,3 +316,73 @@ footer {
   line-height: 114%;
   letter-spacing: -0.02em;
 }
+
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 517px;
+  min-height: 794px;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+}
+
+.modal-buttom{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.backdrop .isopen{
+  opacity:1;
+  visibility: visible;
+  pointer-events: auto;
+
+}
+.backdrop{
+  opacity:0;
+}
+.modal-input-info{
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius;
+  padding:10px;
+  width:100%;
+  height:60px;
+  background-color: transparent;
+  outline:0 px solid transparent;
+
+
+}
+.modal-input-icon{
+  position: absolute;
+  stroke:#111111;
+  fill:none;
+
+  
+}
+.modal-input-info{
+  border-color: #fd9222;
+}
+.modal-input-info:focus +.modal-input-icon{
+  fill:#fd9222
+
+}
