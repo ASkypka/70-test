@@ -47,7 +47,6 @@ ul {
   .container {
     width: 1168px;
     padding: 0 16px;
-
   }
 }
 
@@ -60,14 +59,11 @@ ul {
   background-color: #111111;
 }
 
-@media screen and (max-width: 1157px){
+@media screen and (max-width: 1157px) {
   .div {
     display: none;
   }
-  
 }
-
-
 
 .visually-hidden {
   position: absolute;
@@ -172,14 +168,121 @@ header {
   fill: #fd9222;
 } */
 
-/* benefits */
+/* hero */
+.hero-section {
+}
+.hero-wrap {
+  margin: 0 auto;
+  width: 335px;
+  padding: 395px 20px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.1),
+      rgba(17, 17, 17, 0.1)
+    ),
+    url("../images/hero/hero-bg_mob@1x.jpg");
+}
+
+@media only screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.1),
+        rgba(17, 17, 17, 0.1)
+      ),
+      url("../images/hero/hero-bg_mob@2x.jpg");
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.1),
+        rgba(17, 17, 17, 0.1)
+      ),
+      url("../images/hero/hero-bg_tab@1x.jpg");
+    width: 704px;
+    padding: 671px 40px 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.1),
+        rgba(17, 17, 17, 0.1)
+      ),
+      url("../images/hero/hero-bg_tab@2x.jpg");
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.1),
+        rgba(17, 17, 17, 0.1)
+      ),
+      url("../images/hero/hero-bg_desk@1x.jpg");
+    padding-top: 381px;
+    width: 1136px;
+  }
+}
+
+@media only screen and (min-width: 1168px) and (min-resolution: 192dpi) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.1),
+        rgba(17, 17, 17, 0.1)
+      ),
+      url("../images/hero/hero-bg_desk@2x.jpg");
+  }
+}
+
+.hero-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-header {
+    width: 484px;
+  }
+}
+.hero-icon-list {
+  display: flex;
+  gap: 14px;
+}
+.hero-icon-item {
+}
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-icon-item button {
+  font-family: "Montserrat";
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 120px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+}
+
+/* benefits */
 
 .benefits {
   background-color: #1e1823;
   padding: 20px 0;
 }
-
 
 @media screen and (min-width: 768px) {
   .benefits {
@@ -187,8 +290,7 @@ header {
   }
 }
 
-
- /* .container {
+/* .container {
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
@@ -214,7 +316,6 @@ header {
     flex-wrap: nowrap;
   }
 }
-
 
 .benefits-item {
   width: 100%;
@@ -314,7 +415,8 @@ header {
   background-color: #fafafa;
 }
 
-.button {}
+.button {
+}
 
 /* #region ingridients */
 .ingridients {
@@ -589,7 +691,8 @@ footer {
   pointer-events: auto;
 }
 
-.modal-form {}
+.modal-form {
+}
 
 .modal-feald {
   margin-bottom: 18px;
@@ -609,7 +712,7 @@ footer {
 }
 
 .modal-input-info {
-  border: 1.50px solid rgba(17, 17, 17, 0.5);
+  border: 1.5px solid rgba(17, 17, 17, 0.5);
   border-radius: 13px;
   padding: 22px 24px;
   padding-left: 62px;
@@ -634,12 +737,12 @@ footer {
   border-color: #fd9222;
 }
 
-.modal-input-info:focus+.modal-input-icon {
+.modal-input-info:focus + .modal-input-icon {
   stroke: #fd9222;
 }
 
 .modal-feald-textaria {
-  border: 1.50px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   padding: 22px 24px 24px 24px;
   width: 100%;
@@ -658,9 +761,10 @@ footer {
   color: rgba(64, 64, 64, 0.3);
 }
 
-.modal-checkbox {}
+.modal-checkbox {
+}
 
-.checkbox:checked+.label-checkbox .checkbox-style {
+.checkbox:checked + .label-checkbox .checkbox-style {
   background-color: #fd9222;
   border: none;
   fill: #404040;
